@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.ventanaPop{
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    background-color: yellow;
+    z-index: 50;
+   
+}
+

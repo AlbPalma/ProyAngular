@@ -1,43 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<title>Página de inicio.</title>
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-
-</style>
-</head>
 
 
 
 
-<body style="background-color: rgba(255, 255, 255, 0.822);">
+
+
+
 <!-- DROPDOWN --->
   <div class="dropdown">
-    <img class="imagenDropDown" src="../../assets/plus.jpeg"  alt= "image">
+    <img class="imagenDropDown" src="../../assets/logoUnired.jpg"  alt= "image">
     <div class="dropdown-content ">
       <div class="sidenav">
         <div class="red-bar"></div>
-        <img src="../../assets/plus.jpeg" class="imagenDropDown2" alt= "image" >
-        <a href="#">Perfil</a>
-        <a href="#">Ajustes</a>
-        <a href="#">Amigos</a>
-        <a href="#">Usuarios conectados.</a>
-        <div class="usuarioConectado" >
-          <img src="/assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+        <img src="../../assets/logoUnired.jpg" class="imagenDropDown2" alt= "image" >
+        <a class="opcionesDropDown">Perfil</a>
+        <a class="opcionesDropDown">Amigos</a>
+        <a class="opcionesDropDown">Ajustes</a>
+        <a class="opcionesDropDown">Usuarios conectados</a>
+        <div class="contenedorUsuariosConectados">
+          <div class="usuarioConectado" >
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            
+            
+            
+          </div>
+          
         </div>
-        <div class="usuarioConectado" >
-          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
-        </div>
-        <div class="usuarioConectado" >
-          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
-        </div>
+        <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;">Cerrar cesión</a>
+        
       
         
       </div>
@@ -48,7 +41,7 @@
   
   
   <h2 class="titulo">Unired</h2>
-  <div style="margin-top: 2%;">
+  <div style="margin-top: 2%; background-color: aliceblue;">
     
     <!-- Contenedor del perfil del usuario. --->
     <div class="content" >
@@ -57,8 +50,12 @@
       <img src="../../assets/gato.jpg" class="imagenRP" alt="Foto Perfil." >
       <input type="hidden" class="publicacion" value="publicacion">
       <div class="divTextosRP">
-      <h2>Lorem Gatum <span class="nombreUsuario"></span></h2>
-      <p>Ipsum felinus gatus ..... <span class="mainPublicacion"></span></p>
+      <h2 class="nombreUsuarioRP">Lorem Gatum </h2>
+      <div class="mainRP">
+        <p class="textoMainRP">Hola Mundo! Aquí una breve descripción de mi perfil.</p>
+      </div>
+      <img src="../../assets/plus.jpeg" class="imagenSubirContenidoRP" alt="Foto Plus" >
+      
 
       </div>
       
@@ -69,51 +66,75 @@
     <div class="barra-horizontal"></div>
     
     
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"  >
       <h2 class="nombreCA">Nombre Usuario <span></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
   
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg" class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <h2 class="nombreCA">Nombre Usuario <span ></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
+      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
   
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <h2 class="nombreCA">Nombre Usuario <span ></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"  >
+      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
   
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <h2 class="nombreCA">Nombre Usuario <span ></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
+      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
   
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <h2 class="nombreCA">Nombre Usuario <span ></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
+      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
 
-    <div class="publicacionCA" >
-      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <h2 class="nombreCA">Nombre Usuario <span ></span></h2>
-      <p>Tres tristes tigres picaban código en un teclado. <span class="mainPublicacion"></span></p>
+    <div class="publicacionCA"  >
+      <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
+      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <p class=comentaristaCA>Pepito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
+      <p class=comentaristaCA>Fulanito</p>
+      <p class="comentarioCA">Este es un comentario corto.</p>
+      <p class=comentaristaCA>Menganito</p>
+      <p class="comentarioCA">Este es un comentario en la publicación de mi amigo muy muy pero que muy largo en comparación con lo que suele ser un comentario corriente. Muestra que como quedaría la distribución.</p>
     </div>
     <div class="barra-horizontal"></div>
   
@@ -134,8 +155,8 @@
 
 
 
-</body>
-</html>
+
+
 
 
 

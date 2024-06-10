@@ -1,47 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
 
 
-</style>
-</head>
-
-
-
-
-<body style="background-color: white;">
 <!-- DROPDOWN --->
-  <div class="dropdown">
-    <img class="imagenDropDown" src="../../assets/plus.jpeg">
-    <div class="dropdown-content ">
-      <div class="sidenav">
-        <div class="red-bar"></div>
-        <img src="../../assets/plus.jpeg" class="imagenDropDown2" alt= "image" >
-        <a href="#">Perfil</a>
-        <a href="#">Ajustes</a>
-        <a href="#">Amigos</a>
-        <a href="#">Usuarios conectados.</a>
-        <div class="usuarioConectado" >
-          <img src="/assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
-        </div>
+<div class="dropdown">
+  <img class="imagenDropDown" src="../../assets/logoUnired.jpg"  alt= "image">
+  <div class="dropdown-content ">
+    <div class="sidenav">
+      <div class="red-bar"></div>
+      <img src="../../assets/logoUnired.jpg" class="imagenDropDown2" alt= "image" >
+      <a class="opcionesDropDown">Perfil</a>
+      <a class="opcionesDropDown">Amigos</a>
+      <a class="opcionesDropDown">Ajustes</a>
+      <a class="opcionesDropDown">Usuarios conectados</a>
+      <div class="contenedorUsuariosConectados">
         <div class="usuarioConectado" >
           <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
-        </div>
-        <div class="usuarioConectado" >
+          
           <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+          
+          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+          
+          
+          
         </div>
-      
         
       </div>
+      <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;">Cerrar cesión</a>
+      
+    
+      
     </div>
-    </div>
-    <!-- FIN DEL Dropdown --->
+  </div>
+  </div>
+  <!-- FIN DEL Dropdown --->
 
   
   
@@ -51,16 +41,19 @@
     <!-- Contenedor del perfil del usuario. --->
     <div class="content" >
     
-    <div class="resumenPerfil" >
-      <img src="../../assets/gato.jpg" class="imagenRP" alt="Foto Perfil." >
-      <input type="hidden" class="publicacion" value="publicacion">
-      <div class="divTextosRP">
-      <h2>Nombre<span class="nombreUsuario"></span></h2>
-      <p>Datos de Amigo <span class="mainPublicacion"></span></p>
-
+      <div class="resumenPerfil" >
+        <img src="../../assets/gato.jpg" class="imagenRP" alt="Foto Perfil." >
+        <input type="hidden" class="publicacion" value="publicacion">
+        <div class="divTextosRP">
+        <h2 class="nombreUsuarioRP">Lorem Gatum </h2>
+        <div class="mainRP">
+          <p class="textoMainRP">Hola Mundo! Aquí una breve descripción de mi perfil.</p>
+        </div>
+        
+  
+        </div>
+        
       </div>
-      
-    </div>
     <!--  FIN Contenedor del perfil del usuario. --->
    
       
@@ -69,21 +62,21 @@
     <!-- Contenedores de contenido de PerfilA. --->
     
     <div class="gridCPA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
     </div>
     <div class="barra-horizontal"></div>
     <div class="gridCPA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
     </div>
     <div class="barra-horizontal"></div>
     <div class="gridCPA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
-        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
+        <img  src="../../assets/ardilla.jpg" class="imagenCPA" alt= "Contenido PA" (click)=" openDialogPerfil()" style="cursor: pointer;">
     </div>
     <div class="barra-horizontal"></div>
   
@@ -104,8 +97,6 @@
 
 
 
-</body>
-</html>
 
 
 
