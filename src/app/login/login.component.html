@@ -1,0 +1,26 @@
+
+
+<div class="background-container"></div>
+<div class="login-container">
+    <form>
+    <h2>UniRed 
+    </h2>
+      <div>
+        <img src="../../assets/email.png" alt="Email Icon" class="input-icon">
+        <input type="email" placeholder="Email">
+      </div>
+      <div>
+        <img src="../../assets/lock.png" alt="Password Icon" class="input-icon">
+        <input type="password" placeholder="Password">
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox"> Remember me
+      </div>
+      
+      <button type="submit" (click)="navegarMain()">Login</button>
+      <a href="/forgot" (click)="navegarFpassword()">Forgot password?</a> <!-- <a routerLink="/forgot">Forgot password?</a> -->
+      <a href="/register">Don't have an account? Sign up</a><!-- <a routerLink="/register">Don't have an account? Sign up</a> -->
+    </form>
+  </div>
+
+

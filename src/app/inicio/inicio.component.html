@@ -12,24 +12,24 @@
       <div class="sidenav">
         <div class="red-bar"></div>
         <img src="../../assets/logoUnired.jpg" class="imagenDropDown2" alt= "image" >
-        <a class="opcionesDropDown">Perfil</a>
-        <a class="opcionesDropDown">Amigos</a>
-        <a class="opcionesDropDown">Ajustes</a>
+        <a class="opcionesDropDown" (click)="navegarMain()">Perfil</a>
+        <a class="opcionesDropDown" (click)="navegarPAmigos()">Amigos</a>
+        <a class="opcionesDropDown" (click)="navegarSettings()">Ajustes</a>
         <a class="opcionesDropDown">Usuarios conectados</a>
         <div class="contenedorUsuariosConectados">
           <div class="usuarioConectado" >
-            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()">
             
-            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
             
-            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
             
             
             
           </div>
           
         </div>
-        <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;">Cerrar cesión</a>
+        <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;" (click)="navegarLogin()">Cerrar cesión</a>
         
       
         
@@ -54,7 +54,7 @@
       <div class="mainRP">
         <p class="textoMainRP">Hola Mundo! Aquí una breve descripción de mi perfil.</p>
       </div>
-      <img src="../../assets/plus.jpeg" class="imagenSubirContenidoRP" alt="Foto Plus" >
+      <img src="../../assets/plus.jpeg" class="imagenSubirContenidoRP" alt="Foto Plus" (click)="openSubir()" >
       
 
       </div>
@@ -68,7 +68,7 @@
     
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"  >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>
@@ -80,7 +80,7 @@
   
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>
@@ -92,7 +92,7 @@
   
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"  >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>
@@ -104,7 +104,7 @@
   
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>
@@ -116,7 +116,7 @@
   
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>
@@ -128,7 +128,7 @@
 
     <div class="publicacionCA"  >
       <img src="../../assets/ardilla.jpg"  class="imagenCA" alt="Foto Usuario." (click)="openDialogInicio()"   >
-      <h2 class="nombreCA">Nombre Usuario <span></span></h2>
+      <h2 class="nombreCA" (click)="navegarPerfilA()">Nombre Usuario <span></span></h2>
       <p class=comentaristaCA>Pepito</p>
       <p class="comentarioCA">Este es un comentario en la publicación de mi amigo.</p>
       <p class=comentaristaCA>Fulanito</p>

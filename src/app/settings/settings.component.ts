@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppComponent } from '../app.component';
 @Component({
-  selector: 'app-perfil-a',
+  selector: 'app-settings',
   standalone: true,
   imports: [],
-  templateUrl: './perfil-a.component.html',
-  styleUrl: './perfil-a.component.css',
+  templateUrl: './settings.component.html',
+  styleUrl: './settings.component.css',
   styles: [
     `
     :host {
@@ -16,14 +15,11 @@ import { AppComponent } from '../app.component';
   `,
   ],
 })
-
-export class PerfilAComponent {
-  constructor(private AppComponent: AppComponent, private router: Router) {}
-
-  openDialogPerfil() {
-    this.AppComponent.openDialog();
-  }
-
+export class SettingsComponent {
+  constructor( private router: Router) {}
+  
+ 
+  
   /*Funciones de navegación*/
   navegarPAmigos() {
     this.router.navigate(['/pamigos']);
@@ -41,8 +37,3 @@ export class PerfilAComponent {
     this.router.navigate(["/settings"])
   }
 }
-
-/*export class CompAComponent {
-  
-}*/
-

@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+  <!-- DROPDOWN --->
+  <div class="dropdown">
+    <img class="imagenDropDown" src="../../assets/logoUnired.jpg"  alt= "image">
+    <div class="dropdown-content ">
+      <div class="sidenav">
+        <div class="red-bar"></div>
+        <img src="../../assets/logoUnired.jpg" class="imagenDropDown2" alt= "image" >
+        <a class="opcionesDropDown" (click)="navegarMain()">Perfil</a>
+        <a class="opcionesDropDown" (click)="navegarPAmigos()">Amigos</a>
+        <a class="opcionesDropDown " (click)="navegarSettings()">Ajustes</a>
+        <a class="opcionesDropDown">Usuarios conectados</a>
+        <div class="contenedorUsuariosConectados">
+          <div class="usuarioConectado" >
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()">
+            
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
+            
+            <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
+            
+            
+            
+          </div>
+          
+        </div>
+        <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;" (click)="navegarLogin()">Cerrar cesión</a>
+        
+      
+        
+      </div>
+    </div>
+    </div>
+    <!-- FIN DEL Dropdown --->
+
+
+
+
+  <h2 style="position: absolute; top: 2% ;left: 50% ;transform: translate(-50% , -50% );">Unired</h2>
+  <div style="margin-top: 10px;">
+
+    <div class="content" >
+      <h4 style="position: absolute; top: 7% ;left: 50% ;transform: translate(-50% , -50% );">Página de configuración</h4>
+
+    <div style="margin-top: 6%;">
+      <div class="publicacion" >
+        <input type="hidden" class="publicacion" value="publicacion">
+        <div class="linea">
+          <div class="itenSetting" style="margin-top: 10px;">Idioma:</div>
+          <form style="margin: auto;margin-left: 1%;">
+            <select id="opciones" name="opciones">
+                <option value="opcion1">Castellano</option>
+                <option value="opcion2">Inglés</option>
+            </select>
+        </form>
+        </div>
+        <div class="barra-horizontal"></div>
+      </div>
+
+      <div class="publicacion" >
+        <input type="hidden" class="publicacion" value="publicacion">
+        <div class="linea">
+          <div class="itenSetting" style="margin-top: 7px;">Notificaciones:</div>
+          <label class="switch" style="margin: auto;margin-left: 1%;">
+            <input type="checkbox" id="toggle">
+            <span class="slider"></span>
+        </label>
+        </div>
+        <div class="barra-horizontal"></div>
+      </div>
+
+      <div class="publicacion" >
+        <input type="hidden" class="publicacion" value="publicacion">
+        <div class="linea">
+          <div class="itenSetting">Sonido:</div>
+          <form style="margin: auto;margin-left: 4%;">
+            <label>
+              <input type="radio" name="opcion" value="opcion1" >
+              Por defecto
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="opcion" value="opcion2" checked>
+              Beep básico
+            </label>
+            <br>
+            <label>
+              <input type="radio" name="opcion" value="opcion3">
+              Doble Beep
+            </label>
+          </form>
+        </div>
+        <div class="barra-horizontal"></div>
+      </div>
+
+      <div class="publicacion" >
+        <input type="hidden" class="publicacion" value="publicacion">
+        <div class="linea">
+          <a class="guardarCambios" onclick="mostrarPopup()">Guardar cambios</a>
+          <a href="/" class="cerrarSesion" style="margin: auto;margin-left: 4%; margin-bottom: 1px;" (click)="navegarLogin()">Cerrar Sesión</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="miModal" class="modal">
+  <!-- Contenido del modal -->
+  <div class="modal-content">
+      <span class="close" onclick="cerrarPopup()">&times;</span>
+      <p>Los cambios se han guardado correctamente!</p>
+      <button onclick="cerrarPopup()">Cerrar</button>
+  </div>
+</div>
+
+<script>
+  // Función para mostrar el popup
+  function mostrarPopup() {
+      document.getElementById('miModal').style.display = 'block';
+  }
+
+  // Función para cerrar el popup
+  function cerrarPopup() {
+      document.getElementById('miModal').style.display = 'none';
+  }
+
+</script>
+
+

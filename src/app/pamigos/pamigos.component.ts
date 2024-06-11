@@ -1,28 +1,23 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { AppComponent } from '../app.component';
 @Component({
-  selector: 'app-perfil-a',
+  selector: 'app-pamigos',
   standalone: true,
   imports: [],
-  templateUrl: './perfil-a.component.html',
-  styleUrl: './perfil-a.component.css',
+  templateUrl: './pamigos.component.html',
+  styleUrl: './pamigos.component.css',
   styles: [
     `
     :host {
       display:block;
       background-color: aliceblue;
+      height:"100vh";
     }
   `,
   ],
 })
-
-export class PerfilAComponent {
-  constructor(private AppComponent: AppComponent, private router: Router) {}
-
-  openDialogPerfil() {
-    this.AppComponent.openDialog();
-  }
+export class PamigosComponent {
+  constructor(private router: Router) {}
 
   /*Funciones de navegación*/
   navegarPAmigos() {
@@ -40,9 +35,6 @@ export class PerfilAComponent {
   navegarSettings(){
     this.router.navigate(["/settings"])
   }
+
+
 }
-
-/*export class CompAComponent {
-  
-}*/
-

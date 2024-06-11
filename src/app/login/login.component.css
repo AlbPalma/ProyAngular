@@ -1,0 +1,189 @@
+body, html {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    
+  }
+  
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .item {
+    background-color: #ccc;
+    padding: 20px;
+  }
+
+  /* Estilos por defecto para pantallas grandes */
+ body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+
+  .input-logo{
+    width: 200px;
+    height: 200px;
+  }
+  
+  @media (max-width: 800px) {
+    .background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+      }
+  }
+  
+  :root {
+
+    --rosaClaro: hsla(200, 69%, 33%, 0.922);
+    --gris: #dce0e6;
+    --rosita: #c4b4bf;
+    --azulOscuro: hsla(200, 72%, 17%, 0.922);
+    --rosaSuave: #e79cb08b;
+    --naranjaClaro: #bb6d83;
+    --rosaPastel: #fbd0d9;
+    --rosaIntenso: #af336b;
+    --morado: #7d3756;
+    --marronPastel: #bf9aab5f;
+    --lila: #af336b6e;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --box-shadow: 0 5px 10px rgba(185, 48, 48, 0.1);
+  }
+  
+  body, html {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  body.auth-page-body {
+    margin-top: 250px;
+    height: 100%;
+    background-color: #f0f0f0; 
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  body.landing-page-body {
+    background: linear-gradient(120deg, #2525d8d2 30%, #94a8e7 100%);
+  }
+  
+  
+  
+  .login-container, .register-container, .forgot-password-container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 40px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.8);
+      
+    }
+  
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, #121252 40%, #ffffff 100%);  /* Gradiente de color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+    }
+    
+    .input-icon {
+      margin-right: 10px;
+      margin-top: 0px;
+      width: 24px; 
+      height: 24px; 
+      position: relative;
+      top: 6px;
+    }
+  
+    .email-icon {
+      width: 22px; 
+      height: 22px; 
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    label {
+      margin-top: 10px;
+    }
+    
+    input[type="email"], input[type="password"], input[type="text"], button {
+      margin-top: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .checkbox-container {
+      font-size: 0.7em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Mueve el contenido a la derecha */
+      width: 53%; /* Asegura que ocupe todo el ancho del contenedor */
+      margin-top: 5px;
+  }
+  
+    .checkbox-container input[type="checkbox"] {
+      position: relative;
+      top: 0px; /* Ajusta este valor según sea necesario para mover el checkbox hacia abajo */
+    }
+  
+    button {
+      width: 73%;
+      background-color: #2727a3;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    
+    button:hover {
+      background-color: #2727a3;
+    }
+    
+    a {
+      margin-top: 10px;
+      color: #2727a3;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  
+  
+  

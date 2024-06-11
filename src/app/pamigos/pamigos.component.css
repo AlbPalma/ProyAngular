@@ -1,8 +1,9 @@
-
-
-  html { background-color: aliceblue; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
   
-   /* Estilos del DROPDOWN.*/
+  /* Estilos del DROPDOWN.*/
   .sidenav {
     height: 100%;
     width: 12%;
@@ -143,173 +144,89 @@
   .opcionesDropDown{
     font-family:"../../assets/Roboto-Regular.ttf"  ;
   }
-  
 
   .dropdown:hover .dropdown-content {display: block;}
 
   
-  /*Estilos del landing */
   
-  .titulo {
-    position: relative;
-    font-family:"../../assets/Roboto-Regular.ttf"  ;
-    font-weight: bolder;
-    color: black;
-    /*top: 2% ;*/
-    margin-left: 47% ;
-    /*transform: translate(-50% , -50% );*/
-    margin-bottom: 2%;
-    
-    background-color: aliceblue;
-  }
   
-  .pagination {
-    display: inline-block;
-    text-align: center; /* Centrar horizontalmente */
-    position: relative;
-    margin-top: 3%;
-    top: 95% ;
-    left: 50% ;
-    transform: translate(-50% , -50% );
+  
 
-}
+  /* NUEVO */
+  .friends-page {
+    padding-left: 20px;
+  }
+  .friends-list {
+      max-height: 250px; 
+      overflow-y: auto;  /* Enable vertical scrolling */
+      border: 1px solid #ccc;
+      
+      border-radius: 5px;
+    }
   
-  .pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
+    .friend {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  
+    .friend img {
+      width: 50px; 
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Styles for the search bar */
+  .search-container {
+    margin-bottom: 10px;
   }
   
-  .pagination a.active {
+  .search-container input[type=text] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .move-right {
+    margin-left: 100px;
+  }
+  .delete-button {
+    margin-left: 50px; 
+    background-color: #ff4d4d; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
+  }
+
+  /* Hover effect */
+  .delete-button:hover {
+    background-color: #ff6666; /* Darker red background color on hover */
+  }
+
+  .add-friend-button {
+    margin-left: 50px; 
     background-color: #4CAF50;
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .pagination a:hover:not(.active) {
-    background-color: #b30e0e;
-    border-radius: 5px;
-  }
-
-  .barra-horizontal {
-    background-color: #b30e0e;
-    position: relative;
-    height: 4px; /* Ajusta la altura de la barra según sea necesario */
-    width: 90%; /* O ajusta un ancho específico según tus necesidades */
-    margin: 1,5%;
-    z-index: 0;
-  }
-  
-  /*Estilos del resumen de Perfil "RP"*/
-  .nombreUsuarioRP{
-    font-family:"../../assets/Roboto-Regular.ttf"  ;
-    
-  }
-  
-  .resumenPerfil{
-    position: sticky;
-    display: flex;
-    align-items: center;
-    
-    z-index: 1;
-    top : 0%;
-    background-color: aliceblue;
-    opacity: 100%;
-    margin-right: 10%;
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px;
   }
 
-  .divTextosRP{
-    margin-left: 0.75%;
-    margin-top: 1.1%;
-    margin-bottom: 0.5%;
-
+  /* Hover effect */
+  .add-friend-button:hover {
+    background-color: #45a049; /* Darker green background color on hover */
   }
-
-  .imagenRP{
-    width: 10%;
-    height: 30%;
-    margin-top: 0.25%;
-    margin-bottom: 0.25%;
-    
-      }
-
-    .imagenSubirContenidoRP{
-      width: 3%;
-    height: 3%;
-    margin-top: 0.25%;
-    margin-bottom: 0.25%;
-    cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-    .imagenSubirContenidoRP:hover{
-      transform: scale(1.20);
-    }
-
- 
- 
-  
-  .mainRP{
-    max-width: 45%;
-    
-  }
-  .textoMainRP{
-    font-family: "../../assets/Montserrat-Regular.ttf" ;
-  }
-
-  /*Estilos Contenido Amigos "CA" */
-  
-  .publicacionCA{
-    position: relative;
-    z-index: 0;
-  }
-  .imagenCA{
-    width: 5%;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  height: 10%;
-  margin-top: 0.5%;
-  margin-bottom: 0.5%;
-  
-    }
-    .imagenCA:hover{
-      transform: scale(1.10);
-    }
-   
-  .nombreCA{
-    color:black;
-    cursor: pointer;
-    font-size: medium;
-    margin-top: -0.75%;
-    font-family: "../../assets/Montserrat-Regular.ttf" ;
-    font-weight: bold;
-  }
-  .comentarioCA{
-    margin-left: 1.5%;
-    color: black;
-    font-family:"../../assets/Montserrat-Regular.ttf"  ;
-    font-size: small;
-  }
-  .comentaristaCA{
-    margin-left: 1%;
-    color: black;
-    font-family:"../../assets/Roboto-Regular.ttf"  ;
-    font-size: small;
-    font-weight: bold;
-  }
-  /*.divCA{
-    
-
-  }*/
-
-
-  /*Estilos de imágenes*/
-  
-
- 
-
-  
-  
-  
-
-  

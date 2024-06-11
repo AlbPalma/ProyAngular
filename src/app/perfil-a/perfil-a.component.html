@@ -7,24 +7,24 @@
     <div class="sidenav">
       <div class="red-bar"></div>
       <img src="../../assets/logoUnired.jpg" class="imagenDropDown2" alt= "image" >
-      <a class="opcionesDropDown">Perfil</a>
-      <a class="opcionesDropDown">Amigos</a>
-      <a class="opcionesDropDown">Ajustes</a>
+      <a class="opcionesDropDown" (click)="navegarMain()">Perfil</a>
+      <a class="opcionesDropDown" (click)="navegarPAmigos()">Amigos</a>
+      <a class="opcionesDropDown"(click)="navegarSettings()">Ajustes</a>
       <a class="opcionesDropDown">Usuarios conectados</a>
       <div class="contenedorUsuariosConectados">
         <div class="usuarioConectado" >
-          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()">
           
-          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
           
-          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" >
+          <img src="../../assets/ardilla.jpg" class="imagenConectadoDropDown" alt= "Foto Conectado" (click)="navegarPerfilA()" >
           
           
           
         </div>
         
       </div>
-      <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;">Cerrar cesión</a>
+      <a class="opcionesDropDown" style="font-size: small; margin-top: 0.5%;" (click)="navegarLogin()">Cerrar cesión</a>
       
     
       
